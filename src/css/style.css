@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@200;400;500;600;700&display=swap');
+
+:root {
+    --text-color: hsl(227, 10%, 46%);
+    --background-color: hsl(185, 75%, 39%);
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--background-color, aqua);
+
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    height: 100%;
+
+}
+
+h1::after {
+    content: " 26";
+    color: var(--text-color, grey)
+}
+
+
+.profile-picture img {
+    border-radius: 50%;
+    margin: 30px 0px 10px;
+}
+
+.profile-card {
+    background-color: white;
+    width: 290px;
+    height: 300px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.city {
+    color: var(--text-color, grey);
+    position: relative;
+    top: 20px;
+
+}
+
+.informations {
+    margin-top: 45px;
+    border-top: 1px solid rgba(128, 128, 128, 0.39);
+    width: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+ul {
+    padding: 5%;
+    font-weight: 400;
+    color: var(--text-color);
+
+}
+
+ul::first-line {
+    font-weight: 700;
+    color: black;
+}
+
+
+
+
+/* .dados{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 700;
+}
+
+.dados-info{
+    display: flex;
+    justify-content: space-around;
+    color: var(--text-color);
+} */
